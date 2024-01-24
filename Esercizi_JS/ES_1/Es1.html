@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+  <title>Incrementa/Decrementa</title>
+</head>
+<body>
+
+  <input type="text" id="textBox" value="0" readonly>
+  <button onclick="incrementa()">Incrementa</button>
+  <button onclick="decrementa()">Decrementa</button>
+
+  <script>
+    function incrementa() {
+      var textBox = document.getElementById("textBox");
+      var valoreAttuale = parseInt(textBox.value);
+      textBox.value = valoreAttuale + 1;
+    }
+
+    function decrementa() {
+      var textBox = document.getElementById("textBox");
+      var valoreAttuale = parseInt(textBox.value);
+      textBox.value = valoreAttuale > 0 ? valoreAttuale - 1 : 0;
+    }
+  </script>
+
+</body>
+</html>
